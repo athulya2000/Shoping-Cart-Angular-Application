@@ -5,30 +5,30 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input type="file" name="image" [(ngModel)]="image" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Titile</label>
-                    <input type="text" class="form-control">
+                    <input name="titile" [(ngModel)]="titile" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Description</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="description" [(ngModel)]="description" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Rate</label>
-                    <input type="text" class="form-control">
+                    <input  name="rate" [(ngModel)]="rate" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Seller Name</label>
-                    <input type="text" class="form-control">
+                    <input name="sellerName" [(ngModel)]="sellerName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Quantity</label>
-                    <input type="text" class="form-control">
+                    <input name="quntity" [(ngModel)]="quntity" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-secondary">Submit</button>
+                    <button (click)="readValues()" class="btn btn-secondary">Submit</button>
                 </div>
             </div>
         </div>
